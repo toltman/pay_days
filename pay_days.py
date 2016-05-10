@@ -1,4 +1,4 @@
-from datetime import time, date, timedelta
+from datetime import date, timedelta
 
 # returns a list of pay days starting from next ending before end_date. 
 # freq is the number of weeks between pay days
