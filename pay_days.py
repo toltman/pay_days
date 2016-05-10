@@ -16,7 +16,12 @@ def print_dates(dates):
 			" {:>2},".format(date.day) +
 			" {}".format(date.strftime("%Y")))
 
+# when is your next pay day?
+next_payday = date(2016, 5, 13)
 
-pay = payperiods(date(2016, 5, 13), date(2017, 1, 1), 2)
+# when is the end date?
+end_date = date(2017, 1, 1)
+
+pay = payperiods(next_payday, end_date, 2)
 print("There are {} pay periods left this year".format(len(pay)))
 print_dates(pay)
