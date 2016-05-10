@@ -2,9 +2,9 @@ from datetime import date, timedelta
 
 # returns a list of pay days starting from next ending before end_date. 
 # freq is the number of weeks between pay days
-def payperiods(next, end_date, freq = 2):
+def payperiods(next, end, freq = 2):
 	pay_days = []
-	while (next < end_date):
+	while (next < end):
 		pay_days.append(next)
 		next = next + timedelta(weeks = freq)
 	return pay_days
